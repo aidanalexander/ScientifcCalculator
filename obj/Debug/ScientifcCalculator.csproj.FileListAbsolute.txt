@@ -1,0 +1,10 @@
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\bin\Debug\ScientifcCalculator.exe.config
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\bin\Debug\ScientifcCalculator.exe
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\bin\Debug\ScientifcCalculator.pdb
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.Main.resources
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.Properties.Resources.resources
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.csproj.GenerateResource.cache
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.exe
+C:\Users\Aidan\source\repos\ScientifcCalculator\ScientifcCalculator\obj\Debug\ScientifcCalculator.pdb
