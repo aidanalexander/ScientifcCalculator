@@ -263,6 +263,7 @@
             this.SwitchSignButton.TabIndex = 20;
             this.SwitchSignButton.Text = "+/-";
             this.SwitchSignButton.UseVisualStyleBackColor = true;
+            this.SwitchSignButton.Click += new System.EventHandler(this.SwitchSignButton_Click);
             // 
             // BackButton
             // 
@@ -321,6 +322,7 @@
             this.SquareButton.TabIndex = 41;
             this.SquareButton.Text = "x^2";
             this.SquareButton.UseVisualStyleBackColor = true;
+            this.SquareButton.Click += new System.EventHandler(this.SquareButton_Click);
             // 
             // button14
             // 
@@ -379,6 +381,7 @@
             this.PowerThreeButton.TabIndex = 31;
             this.PowerThreeButton.Text = "x^3";
             this.PowerThreeButton.UseVisualStyleBackColor = true;
+            this.PowerThreeButton.Click += new System.EventHandler(this.PowerThreeButton_Click);
             // 
             // TanButton
             // 
@@ -388,6 +391,7 @@
             this.TanButton.TabIndex = 30;
             this.TanButton.Text = "tan";
             this.TanButton.UseVisualStyleBackColor = true;
+            this.TanButton.Click += new System.EventHandler(this.TanButton_Click);
             // 
             // TanhButton
             // 
@@ -397,6 +401,7 @@
             this.TanhButton.TabIndex = 29;
             this.TanhButton.Text = "tanh";
             this.TanhButton.UseVisualStyleBackColor = true;
+            this.TanhButton.Click += new System.EventHandler(this.TanhButton_Click);
             // 
             // CoshButton
             // 
@@ -508,9 +513,8 @@
             this.ShowOperation.AutoSize = true;
             this.ShowOperation.Location = new System.Drawing.Point(21, 15);
             this.ShowOperation.Name = "ShowOperation";
-            this.ShowOperation.Size = new System.Drawing.Size(24, 13);
+            this.ShowOperation.Size = new System.Drawing.Size(0, 13);
             this.ShowOperation.TabIndex = 54;
-            this.ShowOperation.Text = "test";
             // 
             // Main
             // 

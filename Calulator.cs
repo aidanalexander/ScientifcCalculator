@@ -216,8 +216,8 @@ namespace ScientifcCalculator
         private void CubeRootButton_Click(object sender, EventArgs e)
         {
             ShowOperation.Text = System.Convert.ToString("3√" + "(" + Double.Parse(CalcDisplay.Text) + ")");
-            double log = Math.Pow(Double.Parse(CalcDisplay.Text), 1.0/3.0);
-            CalcDisplay.Text = System.Convert.ToString(log);
+            double cubeRoot = Math.Pow(Double.Parse(CalcDisplay.Text), 1.0/3.0);
+            CalcDisplay.Text = System.Convert.ToString(cubeRoot);
         }
 
         private void SinhButton_Click(object sender, EventArgs e)
@@ -246,6 +246,39 @@ namespace ScientifcCalculator
             double Cos = Math.Cos(Double.Parse(CalcDisplay.Text));
             ShowOperation.Text = System.Convert.ToString("cos" + "(" + (CalcDisplay.Text) + ")");
             CalcDisplay.Text = System.Convert.ToString(Cos);
+        }
+
+        private void TanhButton_Click(object sender, EventArgs e)
+        {
+            double Tanh = Math.Tanh(Double.Parse(CalcDisplay.Text));
+            ShowOperation.Text = System.Convert.ToString("tanh" + "(" + (CalcDisplay.Text) + ")");
+            CalcDisplay.Text = System.Convert.ToString(Tanh);
+        }
+
+        private void TanButton_Click(object sender, EventArgs e)
+        {
+            double Tan = Math.Tan(Double.Parse(CalcDisplay.Text));
+            ShowOperation.Text = System.Convert.ToString("tan" + "(" + (CalcDisplay.Text) + ")");
+            CalcDisplay.Text = System.Convert.ToString(Tan);
+        }
+
+        private void PowerThreeButton_Click(object sender, EventArgs e)
+        {
+            ShowOperation.Text = System.Convert.ToString(Double.Parse(CalcDisplay.Text) + "^3");
+            double cube = Math.Pow(Double.Parse(CalcDisplay.Text), 3.0);
+            CalcDisplay.Text = System.Convert.ToString(cube);
+        }
+
+        private void SquareButton_Click(object sender, EventArgs e)
+        {
+            ShowOperation.Text = System.Convert.ToString(Double.Parse(CalcDisplay.Text) + "^2");
+            double square = Math.Pow(Double.Parse(CalcDisplay.Text), 2.0);
+            CalcDisplay.Text = System.Convert.ToString(square);
+        }
+
+        private void SwitchSignButton_Click(object sender, EventArgs e)
+        {
+            CalcDisplay.Text = System.Convert.ToString(Double.Parse(CalcDisplay.Text) * -1);
         }
     }
 }
