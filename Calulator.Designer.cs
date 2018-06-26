@@ -298,7 +298,6 @@
             this.FactorialButton.TabIndex = 44;
             this.FactorialButton.Text = "n!";
             this.FactorialButton.UseVisualStyleBackColor = true;
-            this.FactorialButton.Click += new System.EventHandler(this.FactorialButton_Click);
             // 
             // SinButton
             // 
@@ -514,7 +513,6 @@
             this.CalcDisplay.TabIndex = 53;
             this.CalcDisplay.Text = "0";
             this.CalcDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CalcDisplay.TextChanged += new System.EventHandler(this.CalcDisplay_TextChanged);
             // 
             // ShowOperation
             // 
@@ -538,6 +536,7 @@
             // DegreesRadio
             // 
             this.DegreesRadio.AutoSize = true;
+            this.DegreesRadio.Checked = true;
             this.DegreesRadio.Location = new System.Drawing.Point(7, 10);
             this.DegreesRadio.Name = "DegreesRadio";
             this.DegreesRadio.Size = new System.Drawing.Size(65, 17);
@@ -624,7 +623,6 @@
             this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
