@@ -57,7 +57,7 @@
             this.LogButton = new System.Windows.Forms.Button();
             this.ModulusButton = new System.Windows.Forms.Button();
             this.ExponentialButton = new System.Windows.Forms.Button();
-            this.ThreeRootButton = new System.Windows.Forms.Button();
+            this.CubeRootButton = new System.Windows.Forms.Button();
             this.PowerThreeButton = new System.Windows.Forms.Button();
             this.TanButton = new System.Windows.Forms.Button();
             this.TanhButton = new System.Windows.Forms.Button();
@@ -72,6 +72,7 @@
             this.CloseBracketButton = new System.Windows.Forms.Button();
             this.OpenBracketButton = new System.Windows.Forms.Button();
             this.CalcDisplay = new System.Windows.Forms.TextBox();
+            this.ShowOperation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NineButton
@@ -82,7 +83,7 @@
             this.NineButton.TabIndex = 1;
             this.NineButton.Text = "9";
             this.NineButton.UseVisualStyleBackColor = true;
-            this.NineButton.Click += new System.EventHandler(this.Button_Click);
+            this.NineButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // EightButton
             // 
@@ -92,7 +93,7 @@
             this.EightButton.TabIndex = 2;
             this.EightButton.Text = "8";
             this.EightButton.UseVisualStyleBackColor = true;
-            this.EightButton.Click += new System.EventHandler(this.Button_Click);
+            this.EightButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // SevenButton
             // 
@@ -102,7 +103,7 @@
             this.SevenButton.TabIndex = 3;
             this.SevenButton.Text = "7";
             this.SevenButton.UseVisualStyleBackColor = true;
-            this.SevenButton.Click += new System.EventHandler(this.Button_Click);
+            this.SevenButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // FourButton
             // 
@@ -112,7 +113,7 @@
             this.FourButton.TabIndex = 5;
             this.FourButton.Text = "4";
             this.FourButton.UseVisualStyleBackColor = true;
-            this.FourButton.Click += new System.EventHandler(this.Button_Click);
+            this.FourButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // FiveButton
             // 
@@ -122,7 +123,7 @@
             this.FiveButton.TabIndex = 6;
             this.FiveButton.Text = "5";
             this.FiveButton.UseVisualStyleBackColor = true;
-            this.FiveButton.Click += new System.EventHandler(this.Button_Click);
+            this.FiveButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // SixButton
             // 
@@ -132,7 +133,7 @@
             this.SixButton.TabIndex = 7;
             this.SixButton.Text = "6";
             this.SixButton.UseVisualStyleBackColor = true;
-            this.SixButton.Click += new System.EventHandler(this.Button_Click);
+            this.SixButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // DivideButton
             // 
@@ -142,7 +143,7 @@
             this.DivideButton.TabIndex = 8;
             this.DivideButton.Text = "/";
             this.DivideButton.UseVisualStyleBackColor = true;
-            this.DivideButton.Click += new System.EventHandler(this.DivideButton_Click);
+            this.DivideButton.Click += new System.EventHandler(this.ArithmeticOperators);
             // 
             // EqualsButton
             // 
@@ -162,7 +163,7 @@
             this.PlusButton.TabIndex = 15;
             this.PlusButton.Text = "+";
             this.PlusButton.UseVisualStyleBackColor = true;
-            this.PlusButton.Click += new System.EventHandler(this.PlusButton_Click);
+            this.PlusButton.Click += new System.EventHandler(this.ArithmeticOperators);
             // 
             // PeriodButton
             // 
@@ -172,7 +173,7 @@
             this.PeriodButton.TabIndex = 14;
             this.PeriodButton.Text = ".";
             this.PeriodButton.UseVisualStyleBackColor = true;
-            this.PeriodButton.Click += new System.EventHandler(this.Button_Click);
+            this.PeriodButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ZeroButton
             // 
@@ -182,7 +183,7 @@
             this.ZeroButton.TabIndex = 13;
             this.ZeroButton.Text = "0";
             this.ZeroButton.UseVisualStyleBackColor = true;
-            this.ZeroButton.Click += new System.EventHandler(this.Button_Click);
+            this.ZeroButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // MinusButton
             // 
@@ -192,7 +193,7 @@
             this.MinusButton.TabIndex = 12;
             this.MinusButton.Text = "-";
             this.MinusButton.UseVisualStyleBackColor = true;
-            this.MinusButton.Click += new System.EventHandler(this.MinusButton_Click);
+            this.MinusButton.Click += new System.EventHandler(this.ArithmeticOperators);
             // 
             // ThreeButton
             // 
@@ -202,7 +203,7 @@
             this.ThreeButton.TabIndex = 11;
             this.ThreeButton.Text = "3";
             this.ThreeButton.UseVisualStyleBackColor = true;
-            this.ThreeButton.Click += new System.EventHandler(this.Button_Click);
+            this.ThreeButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // TwoButton
             // 
@@ -212,7 +213,7 @@
             this.TwoButton.TabIndex = 10;
             this.TwoButton.Text = "2";
             this.TwoButton.UseVisualStyleBackColor = true;
-            this.TwoButton.Click += new System.EventHandler(this.Button_Click);
+            this.TwoButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // OneButton
             // 
@@ -222,7 +223,7 @@
             this.OneButton.TabIndex = 9;
             this.OneButton.Text = "1";
             this.OneButton.UseVisualStyleBackColor = true;
-            this.OneButton.Click += new System.EventHandler(this.Button_Click);
+            this.OneButton.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ClearButton
             // 
@@ -242,7 +243,7 @@
             this.MultiplyButton.TabIndex = 18;
             this.MultiplyButton.Text = "*";
             this.MultiplyButton.UseVisualStyleBackColor = true;
-            this.MultiplyButton.Click += new System.EventHandler(this.MultiplyButton_Click);
+            this.MultiplyButton.Click += new System.EventHandler(this.ArithmeticOperators);
             // 
             // ClearEveryButton
             // 
@@ -252,6 +253,7 @@
             this.ClearEveryButton.TabIndex = 19;
             this.ClearEveryButton.Text = "CE";
             this.ClearEveryButton.UseVisualStyleBackColor = true;
+            this.ClearEveryButton.Click += new System.EventHandler(this.ClearEveryButton_Click);
             // 
             // SwitchSignButton
             // 
@@ -270,6 +272,7 @@
             this.BackButton.TabIndex = 21;
             this.BackButton.Text = "<-";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // SinhButton
             // 
@@ -279,6 +282,7 @@
             this.SinhButton.TabIndex = 45;
             this.SinhButton.Text = "sinh";
             this.SinhButton.UseVisualStyleBackColor = true;
+            this.SinhButton.Click += new System.EventHandler(this.SinhButton_Click);
             // 
             // FactorialButton
             // 
@@ -298,6 +302,7 @@
             this.SinButton.TabIndex = 43;
             this.SinButton.Text = "sin";
             this.SinButton.UseVisualStyleBackColor = true;
+            this.SinButton.Click += new System.EventHandler(this.SinButton_Click);
             // 
             // RootButton
             // 
@@ -334,6 +339,7 @@
             this.LogButton.TabIndex = 35;
             this.LogButton.Text = "log";
             this.LogButton.UseVisualStyleBackColor = true;
+            this.LogButton.Click += new System.EventHandler(this.LogButton_Click);
             // 
             // ModulusButton
             // 
@@ -343,6 +349,7 @@
             this.ModulusButton.TabIndex = 34;
             this.ModulusButton.Text = "Mod";
             this.ModulusButton.UseVisualStyleBackColor = true;
+            this.ModulusButton.Click += new System.EventHandler(this.ArithmeticOperators);
             // 
             // ExponentialButton
             // 
@@ -352,15 +359,17 @@
             this.ExponentialButton.TabIndex = 33;
             this.ExponentialButton.Text = "Exp";
             this.ExponentialButton.UseVisualStyleBackColor = true;
+            this.ExponentialButton.Click += new System.EventHandler(this.ArithmeticOperators);
             // 
-            // ThreeRootButton
+            // CubeRootButton
             // 
-            this.ThreeRootButton.Location = new System.Drawing.Point(596, 193);
-            this.ThreeRootButton.Name = "ThreeRootButton";
-            this.ThreeRootButton.Size = new System.Drawing.Size(75, 23);
-            this.ThreeRootButton.TabIndex = 32;
-            this.ThreeRootButton.Text = "3√x";
-            this.ThreeRootButton.UseVisualStyleBackColor = true;
+            this.CubeRootButton.Location = new System.Drawing.Point(596, 193);
+            this.CubeRootButton.Name = "CubeRootButton";
+            this.CubeRootButton.Size = new System.Drawing.Size(75, 23);
+            this.CubeRootButton.TabIndex = 32;
+            this.CubeRootButton.Text = "3√x";
+            this.CubeRootButton.UseVisualStyleBackColor = true;
+            this.CubeRootButton.Click += new System.EventHandler(this.CubeRootButton_Click);
             // 
             // PowerThreeButton
             // 
@@ -397,6 +406,7 @@
             this.CoshButton.TabIndex = 28;
             this.CoshButton.Text = "cosh";
             this.CoshButton.UseVisualStyleBackColor = true;
+            this.CoshButton.Click += new System.EventHandler(this.CoshButton_Click);
             // 
             // CosButton
             // 
@@ -406,6 +416,7 @@
             this.CosButton.TabIndex = 27;
             this.CosButton.Text = "cos";
             this.CosButton.UseVisualStyleBackColor = true;
+            this.CosButton.Click += new System.EventHandler(this.CosButton_Click);
             // 
             // PowerButton
             // 
@@ -483,19 +494,30 @@
             // 
             // CalcDisplay
             // 
-            this.CalcDisplay.Location = new System.Drawing.Point(12, 14);
+            this.CalcDisplay.Location = new System.Drawing.Point(12, 12);
             this.CalcDisplay.Multiline = true;
             this.CalcDisplay.Name = "CalcDisplay";
             this.CalcDisplay.Size = new System.Drawing.Size(740, 57);
             this.CalcDisplay.TabIndex = 53;
             this.CalcDisplay.Text = "0";
             this.CalcDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CalcDisplay.TextChanged += new System.EventHandler(this.CalcDisplay_TextChanged);
+            // 
+            // ShowOperation
+            // 
+            this.ShowOperation.AutoSize = true;
+            this.ShowOperation.Location = new System.Drawing.Point(21, 15);
+            this.ShowOperation.Name = "ShowOperation";
+            this.ShowOperation.Size = new System.Drawing.Size(24, 13);
+            this.ShowOperation.TabIndex = 54;
+            this.ShowOperation.Text = "test";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(763, 254);
+            this.Controls.Add(this.ShowOperation);
             this.Controls.Add(this.CalcDisplay);
             this.Controls.Add(this.OpenBracketButton);
             this.Controls.Add(this.CloseBracketButton);
@@ -513,7 +535,7 @@
             this.Controls.Add(this.LogButton);
             this.Controls.Add(this.ModulusButton);
             this.Controls.Add(this.ExponentialButton);
-            this.Controls.Add(this.ThreeRootButton);
+            this.Controls.Add(this.CubeRootButton);
             this.Controls.Add(this.PowerThreeButton);
             this.Controls.Add(this.TanButton);
             this.Controls.Add(this.TanhButton);
@@ -580,7 +602,7 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button LogButton;
         private System.Windows.Forms.Button ExponentialButton;
-        private System.Windows.Forms.Button ThreeRootButton;
+        private System.Windows.Forms.Button CubeRootButton;
         private System.Windows.Forms.Button PowerThreeButton;
         private System.Windows.Forms.Button TanButton;
         private System.Windows.Forms.Button TanhButton;
@@ -596,6 +618,7 @@
         private System.Windows.Forms.Button OpenBracketButton;
         private System.Windows.Forms.Button ModulusButton;
         private System.Windows.Forms.TextBox CalcDisplay;
+        private System.Windows.Forms.Label ShowOperation;
     }
 }
 

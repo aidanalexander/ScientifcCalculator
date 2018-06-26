@@ -87,17 +87,7 @@ namespace ScientifcCalculator
         {
         }
 
-        private void EqualsButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PlusButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ClearButton_Click(object sender, EventArgs e)
         {
 
         }
@@ -117,7 +107,7 @@ namespace ScientifcCalculator
 
         }
 
-        private void Button_Click(object sender, EventArgs e)
+        private void ButtonNum_Click(object sender, EventArgs e)
         {
             // clears CalcDisplay if CalcDisplay.Text = "0" or enter_value == true
             if ((CalcDisplay.Text == "0") || (enter_value))
@@ -127,22 +117,135 @@ namespace ScientifcCalculator
             enter_value = false;
 
             // creates button object equal to the button clicked
-            Button num = (Button)sender;
+            Button button = (Button)sender;
 
             // if button clicked is "."
-            if (num.Text == ".")
+            if (button.Text == ".")
             {
                 // if CalcDisplay doesn't already have a period in it
-                if (!CalcDisplay.Text.Contains("."))
-                { 
-                    // set CalcDisplay text to the current text + the text from the clicked button
-                    CalcDisplay.Text = CalcDisplay.Text + num.Text;
+                if (CalcDisplay.Text.Contains(".") == false)
+                {
+                    // set CalcDisplay text to the current text + "."
+                    CalcDisplay.Text = CalcDisplay.Text + button.Text;
                 }
             }
             else
             {
-                CalcDisplay.Text = CalcDisplay.Text + num.Text;
-            }       
+                CalcDisplay.Text = CalcDisplay.Text + button.Text;
+            }
+        }
+
+        private void ClearEveryButton_Click(object sender, EventArgs e)
+        {
+            // set CalcDisplay to 0
+            CalcDisplay.Text = "0";
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            // set CalcDisplay to 0
+            CalcDisplay.Text = "0";
+            ShowOperation.Text = "";
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            // if CalcDisplay length more than 0
+            if (CalcDisplay.Text.Length > 0)
+            {
+                CalcDisplay.Text = CalcDisplay.Text.Remove(CalcDisplay.Text.Length - 1, 1);
+            }
+
+            // if CalcDisplay empty set back to 0
+            if (CalcDisplay.Text == "")
+            {
+                CalcDisplay.Text = "0";
+            }
+        }
+
+        private void CalcDisplay_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ArithmeticOperators(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            operation = button.Text;
+            results = Double.Parse(CalcDisplay.Text);
+            CalcDisplay.Text = "";
+            ShowOperation.Text = System.Convert.ToString(results) + " " + operation;
+        }
+
+        private void EqualsButton_Click(object sender, EventArgs e)
+        {
+            ShowOperation.Text = "";
+            switch(operation)
+            {
+                case "+":
+                    CalcDisplay.Text = (results + Double.Parse(CalcDisplay.Text)).ToString();
+                    break;
+                case "-":
+                    CalcDisplay.Text = (results - Double.Parse(CalcDisplay.Text)).ToString();
+                    break;
+                case "*":
+                    CalcDisplay.Text = (results * Double.Parse(CalcDisplay.Text)).ToString();
+                    break;
+                case "/":
+                    CalcDisplay.Text = (results / Double.Parse(CalcDisplay.Text)).ToString();
+                    break;
+                case "Mod":
+                    CalcDisplay.Text = (results % Double.Parse(CalcDisplay.Text)).ToString();
+                    break;
+                case "Exp":
+                    double i = Double.Parse(CalcDisplay.Text);
+                    double q;
+                    q = (results);
+                    CalcDisplay.Text = Math.Exp(i * Math.Log(q * 4)).ToString();
+                    break;
+            }
+        }
+
+        private void LogButton_Click(object sender, EventArgs e)
+        {
+            ShowOperation.Text = System.Convert.ToString("log" + "(" + Double.Parse(CalcDisplay.Text) + ")");
+            double log = Math.Log10(Double.Parse(CalcDisplay.Text));
+            CalcDisplay.Text = System.Convert.ToString(log);
+        }
+
+        private void CubeRootButton_Click(object sender, EventArgs e)
+        {
+            ShowOperation.Text = System.Convert.ToString("3√" + "(" + Double.Parse(CalcDisplay.Text) + ")");
+            double log = Math.Pow(Double.Parse(CalcDisplay.Text), 1.0/3.0);
+            CalcDisplay.Text = System.Convert.ToString(log);
+        }
+
+        private void SinhButton_Click(object sender, EventArgs e)
+        {
+            double Sinh = Math.Sinh(Double.Parse(CalcDisplay.Text));
+            ShowOperation.Text = System.Convert.ToString("sinh" + "(" + (CalcDisplay.Text) + ")");
+            CalcDisplay.Text = System.Convert.ToString(Sinh);
+        }
+
+        private void SinButton_Click(object sender, EventArgs e)
+        {
+            double Sin = Math.Sin(Double.Parse(CalcDisplay.Text));
+            ShowOperation.Text = System.Convert.ToString("sin" + "(" + (CalcDisplay.Text) + ")");
+            CalcDisplay.Text = System.Convert.ToString(Sin);
+        }
+
+        private void CoshButton_Click(object sender, EventArgs e)
+        {
+            double Cosh = Math.Cosh(Double.Parse(CalcDisplay.Text));
+            ShowOperation.Text = System.Convert.ToString("cosh" + "(" + (CalcDisplay.Text) + ")");
+            CalcDisplay.Text = System.Convert.ToString(Cosh);
+        }
+
+        private void CosButton_Click(object sender, EventArgs e)
+        {
+            double Cos = Math.Cos(Double.Parse(CalcDisplay.Text));
+            ShowOperation.Text = System.Convert.ToString("cos" + "(" + (CalcDisplay.Text) + ")");
+            CalcDisplay.Text = System.Convert.ToString(Cos);
         }
     }
 }
