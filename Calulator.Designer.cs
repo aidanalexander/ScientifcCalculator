@@ -73,11 +73,16 @@
             this.OpenBracketButton = new System.Windows.Forms.Button();
             this.CalcDisplay = new System.Windows.Forms.TextBox();
             this.ShowOperation = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DegreesRadio = new System.Windows.Forms.RadioButton();
+            this.RadiansRadio = new System.Windows.Forms.RadioButton();
+            this.GradsRadio = new System.Windows.Forms.RadioButton();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // NineButton
             // 
-            this.NineButton.Location = new System.Drawing.Point(174, 135);
+            this.NineButton.Location = new System.Drawing.Point(174, 172);
             this.NineButton.Name = "NineButton";
             this.NineButton.Size = new System.Drawing.Size(75, 23);
             this.NineButton.TabIndex = 1;
@@ -87,7 +92,7 @@
             // 
             // EightButton
             // 
-            this.EightButton.Location = new System.Drawing.Point(93, 135);
+            this.EightButton.Location = new System.Drawing.Point(93, 172);
             this.EightButton.Name = "EightButton";
             this.EightButton.Size = new System.Drawing.Size(75, 23);
             this.EightButton.TabIndex = 2;
@@ -97,7 +102,7 @@
             // 
             // SevenButton
             // 
-            this.SevenButton.Location = new System.Drawing.Point(12, 135);
+            this.SevenButton.Location = new System.Drawing.Point(12, 172);
             this.SevenButton.Name = "SevenButton";
             this.SevenButton.Size = new System.Drawing.Size(75, 23);
             this.SevenButton.TabIndex = 3;
@@ -107,7 +112,7 @@
             // 
             // FourButton
             // 
-            this.FourButton.Location = new System.Drawing.Point(12, 164);
+            this.FourButton.Location = new System.Drawing.Point(12, 201);
             this.FourButton.Name = "FourButton";
             this.FourButton.Size = new System.Drawing.Size(75, 23);
             this.FourButton.TabIndex = 5;
@@ -117,7 +122,7 @@
             // 
             // FiveButton
             // 
-            this.FiveButton.Location = new System.Drawing.Point(93, 164);
+            this.FiveButton.Location = new System.Drawing.Point(93, 201);
             this.FiveButton.Name = "FiveButton";
             this.FiveButton.Size = new System.Drawing.Size(75, 23);
             this.FiveButton.TabIndex = 6;
@@ -127,7 +132,7 @@
             // 
             // SixButton
             // 
-            this.SixButton.Location = new System.Drawing.Point(174, 164);
+            this.SixButton.Location = new System.Drawing.Point(174, 201);
             this.SixButton.Name = "SixButton";
             this.SixButton.Size = new System.Drawing.Size(75, 23);
             this.SixButton.TabIndex = 7;
@@ -137,7 +142,7 @@
             // 
             // DivideButton
             // 
-            this.DivideButton.Location = new System.Drawing.Point(255, 164);
+            this.DivideButton.Location = new System.Drawing.Point(255, 201);
             this.DivideButton.Name = "DivideButton";
             this.DivideButton.Size = new System.Drawing.Size(75, 23);
             this.DivideButton.TabIndex = 8;
@@ -147,7 +152,7 @@
             // 
             // EqualsButton
             // 
-            this.EqualsButton.Location = new System.Drawing.Point(174, 222);
+            this.EqualsButton.Location = new System.Drawing.Point(174, 259);
             this.EqualsButton.Name = "EqualsButton";
             this.EqualsButton.Size = new System.Drawing.Size(75, 23);
             this.EqualsButton.TabIndex = 16;
@@ -157,7 +162,7 @@
             // 
             // PlusButton
             // 
-            this.PlusButton.Location = new System.Drawing.Point(255, 222);
+            this.PlusButton.Location = new System.Drawing.Point(255, 259);
             this.PlusButton.Name = "PlusButton";
             this.PlusButton.Size = new System.Drawing.Size(75, 23);
             this.PlusButton.TabIndex = 15;
@@ -167,7 +172,7 @@
             // 
             // PeriodButton
             // 
-            this.PeriodButton.Location = new System.Drawing.Point(93, 222);
+            this.PeriodButton.Location = new System.Drawing.Point(93, 259);
             this.PeriodButton.Name = "PeriodButton";
             this.PeriodButton.Size = new System.Drawing.Size(75, 23);
             this.PeriodButton.TabIndex = 14;
@@ -177,7 +182,7 @@
             // 
             // ZeroButton
             // 
-            this.ZeroButton.Location = new System.Drawing.Point(12, 222);
+            this.ZeroButton.Location = new System.Drawing.Point(12, 259);
             this.ZeroButton.Name = "ZeroButton";
             this.ZeroButton.Size = new System.Drawing.Size(75, 23);
             this.ZeroButton.TabIndex = 13;
@@ -187,7 +192,7 @@
             // 
             // MinusButton
             // 
-            this.MinusButton.Location = new System.Drawing.Point(255, 193);
+            this.MinusButton.Location = new System.Drawing.Point(255, 230);
             this.MinusButton.Name = "MinusButton";
             this.MinusButton.Size = new System.Drawing.Size(75, 23);
             this.MinusButton.TabIndex = 12;
@@ -197,7 +202,7 @@
             // 
             // ThreeButton
             // 
-            this.ThreeButton.Location = new System.Drawing.Point(174, 193);
+            this.ThreeButton.Location = new System.Drawing.Point(174, 230);
             this.ThreeButton.Name = "ThreeButton";
             this.ThreeButton.Size = new System.Drawing.Size(75, 23);
             this.ThreeButton.TabIndex = 11;
@@ -207,7 +212,7 @@
             // 
             // TwoButton
             // 
-            this.TwoButton.Location = new System.Drawing.Point(93, 193);
+            this.TwoButton.Location = new System.Drawing.Point(93, 230);
             this.TwoButton.Name = "TwoButton";
             this.TwoButton.Size = new System.Drawing.Size(75, 23);
             this.TwoButton.TabIndex = 10;
@@ -217,7 +222,7 @@
             // 
             // OneButton
             // 
-            this.OneButton.Location = new System.Drawing.Point(12, 193);
+            this.OneButton.Location = new System.Drawing.Point(12, 230);
             this.OneButton.Name = "OneButton";
             this.OneButton.Size = new System.Drawing.Size(75, 23);
             this.OneButton.TabIndex = 9;
@@ -227,7 +232,7 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(174, 106);
+            this.ClearButton.Location = new System.Drawing.Point(174, 143);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(75, 23);
             this.ClearButton.TabIndex = 17;
@@ -237,7 +242,7 @@
             // 
             // MultiplyButton
             // 
-            this.MultiplyButton.Location = new System.Drawing.Point(255, 135);
+            this.MultiplyButton.Location = new System.Drawing.Point(255, 172);
             this.MultiplyButton.Name = "MultiplyButton";
             this.MultiplyButton.Size = new System.Drawing.Size(75, 23);
             this.MultiplyButton.TabIndex = 18;
@@ -247,7 +252,7 @@
             // 
             // ClearEveryButton
             // 
-            this.ClearEveryButton.Location = new System.Drawing.Point(93, 106);
+            this.ClearEveryButton.Location = new System.Drawing.Point(93, 143);
             this.ClearEveryButton.Name = "ClearEveryButton";
             this.ClearEveryButton.Size = new System.Drawing.Size(75, 23);
             this.ClearEveryButton.TabIndex = 19;
@@ -257,7 +262,7 @@
             // 
             // SwitchSignButton
             // 
-            this.SwitchSignButton.Location = new System.Drawing.Point(255, 106);
+            this.SwitchSignButton.Location = new System.Drawing.Point(255, 143);
             this.SwitchSignButton.Name = "SwitchSignButton";
             this.SwitchSignButton.Size = new System.Drawing.Size(75, 23);
             this.SwitchSignButton.TabIndex = 20;
@@ -267,7 +272,7 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(12, 106);
+            this.BackButton.Location = new System.Drawing.Point(12, 143);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(75, 23);
             this.BackButton.TabIndex = 21;
@@ -277,7 +282,7 @@
             // 
             // SinhButton
             // 
-            this.SinhButton.Location = new System.Drawing.Point(353, 135);
+            this.SinhButton.Location = new System.Drawing.Point(358, 172);
             this.SinhButton.Name = "SinhButton";
             this.SinhButton.Size = new System.Drawing.Size(75, 23);
             this.SinhButton.TabIndex = 45;
@@ -287,7 +292,7 @@
             // 
             // FactorialButton
             // 
-            this.FactorialButton.Location = new System.Drawing.Point(596, 135);
+            this.FactorialButton.Location = new System.Drawing.Point(601, 172);
             this.FactorialButton.Name = "FactorialButton";
             this.FactorialButton.Size = new System.Drawing.Size(75, 23);
             this.FactorialButton.TabIndex = 44;
@@ -297,7 +302,7 @@
             // 
             // SinButton
             // 
-            this.SinButton.Location = new System.Drawing.Point(434, 135);
+            this.SinButton.Location = new System.Drawing.Point(439, 172);
             this.SinButton.Name = "SinButton";
             this.SinButton.Size = new System.Drawing.Size(75, 23);
             this.SinButton.TabIndex = 43;
@@ -307,7 +312,7 @@
             // 
             // RootButton
             // 
-            this.RootButton.Location = new System.Drawing.Point(596, 164);
+            this.RootButton.Location = new System.Drawing.Point(601, 201);
             this.RootButton.Name = "RootButton";
             this.RootButton.Size = new System.Drawing.Size(75, 23);
             this.RootButton.TabIndex = 42;
@@ -316,7 +321,7 @@
             // 
             // SquareButton
             // 
-            this.SquareButton.Location = new System.Drawing.Point(515, 135);
+            this.SquareButton.Location = new System.Drawing.Point(520, 172);
             this.SquareButton.Name = "SquareButton";
             this.SquareButton.Size = new System.Drawing.Size(75, 23);
             this.SquareButton.TabIndex = 41;
@@ -326,7 +331,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(596, 222);
+            this.button14.Location = new System.Drawing.Point(601, 259);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 36;
@@ -335,7 +340,7 @@
             // 
             // LogButton
             // 
-            this.LogButton.Location = new System.Drawing.Point(515, 222);
+            this.LogButton.Location = new System.Drawing.Point(520, 259);
             this.LogButton.Name = "LogButton";
             this.LogButton.Size = new System.Drawing.Size(75, 23);
             this.LogButton.TabIndex = 35;
@@ -345,7 +350,7 @@
             // 
             // ModulusButton
             // 
-            this.ModulusButton.Location = new System.Drawing.Point(434, 222);
+            this.ModulusButton.Location = new System.Drawing.Point(439, 259);
             this.ModulusButton.Name = "ModulusButton";
             this.ModulusButton.Size = new System.Drawing.Size(75, 23);
             this.ModulusButton.TabIndex = 34;
@@ -355,7 +360,7 @@
             // 
             // ExponentialButton
             // 
-            this.ExponentialButton.Location = new System.Drawing.Point(353, 222);
+            this.ExponentialButton.Location = new System.Drawing.Point(358, 259);
             this.ExponentialButton.Name = "ExponentialButton";
             this.ExponentialButton.Size = new System.Drawing.Size(75, 23);
             this.ExponentialButton.TabIndex = 33;
@@ -365,7 +370,7 @@
             // 
             // CubeRootButton
             // 
-            this.CubeRootButton.Location = new System.Drawing.Point(596, 193);
+            this.CubeRootButton.Location = new System.Drawing.Point(601, 230);
             this.CubeRootButton.Name = "CubeRootButton";
             this.CubeRootButton.Size = new System.Drawing.Size(75, 23);
             this.CubeRootButton.TabIndex = 32;
@@ -375,7 +380,7 @@
             // 
             // PowerThreeButton
             // 
-            this.PowerThreeButton.Location = new System.Drawing.Point(515, 193);
+            this.PowerThreeButton.Location = new System.Drawing.Point(520, 230);
             this.PowerThreeButton.Name = "PowerThreeButton";
             this.PowerThreeButton.Size = new System.Drawing.Size(75, 23);
             this.PowerThreeButton.TabIndex = 31;
@@ -385,7 +390,7 @@
             // 
             // TanButton
             // 
-            this.TanButton.Location = new System.Drawing.Point(434, 193);
+            this.TanButton.Location = new System.Drawing.Point(439, 230);
             this.TanButton.Name = "TanButton";
             this.TanButton.Size = new System.Drawing.Size(75, 23);
             this.TanButton.TabIndex = 30;
@@ -395,7 +400,7 @@
             // 
             // TanhButton
             // 
-            this.TanhButton.Location = new System.Drawing.Point(353, 193);
+            this.TanhButton.Location = new System.Drawing.Point(358, 230);
             this.TanhButton.Name = "TanhButton";
             this.TanhButton.Size = new System.Drawing.Size(75, 23);
             this.TanhButton.TabIndex = 29;
@@ -405,7 +410,7 @@
             // 
             // CoshButton
             // 
-            this.CoshButton.Location = new System.Drawing.Point(353, 164);
+            this.CoshButton.Location = new System.Drawing.Point(358, 201);
             this.CoshButton.Name = "CoshButton";
             this.CoshButton.Size = new System.Drawing.Size(75, 23);
             this.CoshButton.TabIndex = 28;
@@ -415,7 +420,7 @@
             // 
             // CosButton
             // 
-            this.CosButton.Location = new System.Drawing.Point(434, 164);
+            this.CosButton.Location = new System.Drawing.Point(439, 201);
             this.CosButton.Name = "CosButton";
             this.CosButton.Size = new System.Drawing.Size(75, 23);
             this.CosButton.TabIndex = 27;
@@ -425,7 +430,7 @@
             // 
             // PowerButton
             // 
-            this.PowerButton.Location = new System.Drawing.Point(515, 164);
+            this.PowerButton.Location = new System.Drawing.Point(520, 201);
             this.PowerButton.Name = "PowerButton";
             this.PowerButton.Size = new System.Drawing.Size(75, 23);
             this.PowerButton.TabIndex = 26;
@@ -434,34 +439,37 @@
             // 
             // MCButton
             // 
-            this.MCButton.Location = new System.Drawing.Point(353, 106);
+            this.MCButton.Location = new System.Drawing.Point(358, 143);
             this.MCButton.Name = "MCButton";
             this.MCButton.Size = new System.Drawing.Size(75, 23);
             this.MCButton.TabIndex = 49;
             this.MCButton.Text = "MC";
             this.MCButton.UseVisualStyleBackColor = true;
+            this.MCButton.Click += new System.EventHandler(this.MCButton_Click);
             // 
             // MPlusButton
             // 
-            this.MPlusButton.Location = new System.Drawing.Point(596, 106);
+            this.MPlusButton.Location = new System.Drawing.Point(601, 143);
             this.MPlusButton.Name = "MPlusButton";
             this.MPlusButton.Size = new System.Drawing.Size(75, 23);
             this.MPlusButton.TabIndex = 48;
             this.MPlusButton.Text = "M+";
             this.MPlusButton.UseVisualStyleBackColor = true;
+            this.MPlusButton.Click += new System.EventHandler(this.MPlusButton_Click);
             // 
             // MRButton
             // 
-            this.MRButton.Location = new System.Drawing.Point(434, 106);
+            this.MRButton.Location = new System.Drawing.Point(439, 143);
             this.MRButton.Name = "MRButton";
             this.MRButton.Size = new System.Drawing.Size(75, 23);
             this.MRButton.TabIndex = 47;
             this.MRButton.Text = "MR";
             this.MRButton.UseVisualStyleBackColor = true;
+            this.MRButton.Click += new System.EventHandler(this.MRButton_Click);
             // 
             // MSButton
             // 
-            this.MSButton.Location = new System.Drawing.Point(515, 106);
+            this.MSButton.Location = new System.Drawing.Point(520, 143);
             this.MSButton.Name = "MSButton";
             this.MSButton.Size = new System.Drawing.Size(75, 23);
             this.MSButton.TabIndex = 46;
@@ -471,7 +479,7 @@
             // 
             // MMinusButton
             // 
-            this.MMinusButton.Location = new System.Drawing.Point(676, 106);
+            this.MMinusButton.Location = new System.Drawing.Point(681, 143);
             this.MMinusButton.Name = "MMinusButton";
             this.MMinusButton.Size = new System.Drawing.Size(75, 23);
             this.MMinusButton.TabIndex = 50;
@@ -481,7 +489,7 @@
             // 
             // CloseBracketButton
             // 
-            this.CloseBracketButton.Location = new System.Drawing.Point(93, 77);
+            this.CloseBracketButton.Location = new System.Drawing.Point(93, 114);
             this.CloseBracketButton.Name = "CloseBracketButton";
             this.CloseBracketButton.Size = new System.Drawing.Size(75, 23);
             this.CloseBracketButton.TabIndex = 51;
@@ -490,7 +498,7 @@
             // 
             // OpenBracketButton
             // 
-            this.OpenBracketButton.Location = new System.Drawing.Point(12, 77);
+            this.OpenBracketButton.Location = new System.Drawing.Point(12, 114);
             this.OpenBracketButton.Name = "OpenBracketButton";
             this.OpenBracketButton.Size = new System.Drawing.Size(75, 23);
             this.OpenBracketButton.TabIndex = 52;
@@ -516,11 +524,56 @@
             this.ShowOperation.Size = new System.Drawing.Size(0, 13);
             this.ShowOperation.TabIndex = 54;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.GradsRadio);
+            this.groupBox1.Controls.Add(this.RadiansRadio);
+            this.groupBox1.Controls.Add(this.DegreesRadio);
+            this.groupBox1.Location = new System.Drawing.Point(12, 75);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 33);
+            this.groupBox1.TabIndex = 55;
+            this.groupBox1.TabStop = false;
+            // 
+            // DegreesRadio
+            // 
+            this.DegreesRadio.AutoSize = true;
+            this.DegreesRadio.Location = new System.Drawing.Point(7, 10);
+            this.DegreesRadio.Name = "DegreesRadio";
+            this.DegreesRadio.Size = new System.Drawing.Size(65, 17);
+            this.DegreesRadio.TabIndex = 0;
+            this.DegreesRadio.TabStop = true;
+            this.DegreesRadio.Text = "Degrees";
+            this.DegreesRadio.UseVisualStyleBackColor = true;
+            // 
+            // RadiansRadio
+            // 
+            this.RadiansRadio.AutoSize = true;
+            this.RadiansRadio.Location = new System.Drawing.Point(78, 10);
+            this.RadiansRadio.Name = "RadiansRadio";
+            this.RadiansRadio.Size = new System.Drawing.Size(64, 17);
+            this.RadiansRadio.TabIndex = 1;
+            this.RadiansRadio.TabStop = true;
+            this.RadiansRadio.Text = "Radians";
+            this.RadiansRadio.UseVisualStyleBackColor = true;
+            // 
+            // GradsRadio
+            // 
+            this.GradsRadio.AutoSize = true;
+            this.GradsRadio.Location = new System.Drawing.Point(148, 10);
+            this.GradsRadio.Name = "GradsRadio";
+            this.GradsRadio.Size = new System.Drawing.Size(53, 17);
+            this.GradsRadio.TabIndex = 2;
+            this.GradsRadio.TabStop = true;
+            this.GradsRadio.Text = "Grads";
+            this.GradsRadio.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 254);
+            this.ClientSize = new System.Drawing.Size(763, 289);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ShowOperation);
             this.Controls.Add(this.CalcDisplay);
             this.Controls.Add(this.OpenBracketButton);
@@ -572,6 +625,8 @@
             this.Name = "Main";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -623,6 +678,10 @@
         private System.Windows.Forms.Button ModulusButton;
         private System.Windows.Forms.TextBox CalcDisplay;
         private System.Windows.Forms.Label ShowOperation;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton DegreesRadio;
+        private System.Windows.Forms.RadioButton RadiansRadio;
+        private System.Windows.Forms.RadioButton GradsRadio;
     }
 }
 

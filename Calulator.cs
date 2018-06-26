@@ -15,6 +15,7 @@ namespace ScientifcCalculator
         Double results = 0;
         String operation = "";
         bool enter_value = false;
+        String memory = "";
 
         public Main()
         {
@@ -88,16 +89,6 @@ namespace ScientifcCalculator
         }
 
         private void PlusButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MSButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MMinusButton_Click(object sender, EventArgs e)
         {
 
         }
@@ -279,6 +270,31 @@ namespace ScientifcCalculator
         private void SwitchSignButton_Click(object sender, EventArgs e)
         {
             CalcDisplay.Text = System.Convert.ToString(Double.Parse(CalcDisplay.Text) * -1);
+        }
+
+        private void MCButton_Click(object sender, EventArgs e)
+        {
+            memory = "";
+        }
+
+        private void MRButton_Click(object sender, EventArgs e)
+        {
+            CalcDisplay.Text = memory;
+        }
+
+        private void MSButton_Click(object sender, EventArgs e)
+        {
+            memory = CalcDisplay.Text;
+        }
+
+        private void MPlusButton_Click(object sender, EventArgs e)
+        {
+            memory = System.Convert.ToString(Double.Parse(memory) + Double.Parse(CalcDisplay.Text));
+        }
+
+        private void MMinusButton_Click(object sender, EventArgs e)
+        {
+            memory = System.Convert.ToString(Double.Parse(memory) - Double.Parse(CalcDisplay.Text));
         }
     }
 }
