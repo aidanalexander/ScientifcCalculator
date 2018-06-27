@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.NineButton = new System.Windows.Forms.Button();
             this.EightButton = new System.Windows.Forms.Button();
             this.SevenButton = new System.Windows.Forms.Button();
@@ -53,7 +54,7 @@
             this.SinButton = new System.Windows.Forms.Button();
             this.RootButton = new System.Windows.Forms.Button();
             this.SquareButton = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.TenPowerButton = new System.Windows.Forms.Button();
             this.LogButton = new System.Windows.Forms.Button();
             this.ModulusButton = new System.Windows.Forms.Button();
             this.ExponentialButton = new System.Windows.Forms.Button();
@@ -74,9 +75,9 @@
             this.CalcDisplay = new System.Windows.Forms.TextBox();
             this.ShowOperation = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DegreesRadio = new System.Windows.Forms.RadioButton();
-            this.RadiansRadio = new System.Windows.Forms.RadioButton();
             this.GradsRadio = new System.Windows.Forms.RadioButton();
+            this.RadiansRadio = new System.Windows.Forms.RadioButton();
+            this.DegreesRadio = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -328,14 +329,15 @@
             this.SquareButton.UseVisualStyleBackColor = true;
             this.SquareButton.Click += new System.EventHandler(this.SquareButton_Click);
             // 
-            // button14
+            // TenPowerButton
             // 
-            this.button14.Location = new System.Drawing.Point(601, 259);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 36;
-            this.button14.Text = "10^x";
-            this.button14.UseVisualStyleBackColor = true;
+            this.TenPowerButton.Location = new System.Drawing.Point(601, 259);
+            this.TenPowerButton.Name = "TenPowerButton";
+            this.TenPowerButton.Size = new System.Drawing.Size(75, 23);
+            this.TenPowerButton.TabIndex = 36;
+            this.TenPowerButton.Text = "10^x";
+            this.TenPowerButton.UseVisualStyleBackColor = true;
+            this.TenPowerButton.Click += new System.EventHandler(this.TenPowerButton_Click);
             // 
             // LogButton
             // 
@@ -533,17 +535,16 @@
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             // 
-            // DegreesRadio
+            // GradsRadio
             // 
-            this.DegreesRadio.AutoSize = true;
-            this.DegreesRadio.Checked = true;
-            this.DegreesRadio.Location = new System.Drawing.Point(7, 10);
-            this.DegreesRadio.Name = "DegreesRadio";
-            this.DegreesRadio.Size = new System.Drawing.Size(65, 17);
-            this.DegreesRadio.TabIndex = 0;
-            this.DegreesRadio.TabStop = true;
-            this.DegreesRadio.Text = "Degrees";
-            this.DegreesRadio.UseVisualStyleBackColor = true;
+            this.GradsRadio.AutoSize = true;
+            this.GradsRadio.Location = new System.Drawing.Point(148, 10);
+            this.GradsRadio.Name = "GradsRadio";
+            this.GradsRadio.Size = new System.Drawing.Size(53, 17);
+            this.GradsRadio.TabIndex = 2;
+            this.GradsRadio.TabStop = true;
+            this.GradsRadio.Text = "Grads";
+            this.GradsRadio.UseVisualStyleBackColor = true;
             // 
             // RadiansRadio
             // 
@@ -556,16 +557,17 @@
             this.RadiansRadio.Text = "Radians";
             this.RadiansRadio.UseVisualStyleBackColor = true;
             // 
-            // GradsRadio
+            // DegreesRadio
             // 
-            this.GradsRadio.AutoSize = true;
-            this.GradsRadio.Location = new System.Drawing.Point(148, 10);
-            this.GradsRadio.Name = "GradsRadio";
-            this.GradsRadio.Size = new System.Drawing.Size(53, 17);
-            this.GradsRadio.TabIndex = 2;
-            this.GradsRadio.TabStop = true;
-            this.GradsRadio.Text = "Grads";
-            this.GradsRadio.UseVisualStyleBackColor = true;
+            this.DegreesRadio.AutoSize = true;
+            this.DegreesRadio.Checked = true;
+            this.DegreesRadio.Location = new System.Drawing.Point(7, 10);
+            this.DegreesRadio.Name = "DegreesRadio";
+            this.DegreesRadio.Size = new System.Drawing.Size(65, 17);
+            this.DegreesRadio.TabIndex = 0;
+            this.DegreesRadio.TabStop = true;
+            this.DegreesRadio.Text = "Degrees";
+            this.DegreesRadio.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -587,7 +589,7 @@
             this.Controls.Add(this.SinButton);
             this.Controls.Add(this.RootButton);
             this.Controls.Add(this.SquareButton);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.TenPowerButton);
             this.Controls.Add(this.LogButton);
             this.Controls.Add(this.ModulusButton);
             this.Controls.Add(this.ExponentialButton);
@@ -619,6 +621,7 @@
             this.Controls.Add(this.EightButton);
             this.Controls.Add(this.NineButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
@@ -656,7 +659,7 @@
         private System.Windows.Forms.Button SinButton;
         private System.Windows.Forms.Button RootButton;
         private System.Windows.Forms.Button SquareButton;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button TenPowerButton;
         private System.Windows.Forms.Button LogButton;
         private System.Windows.Forms.Button ExponentialButton;
         private System.Windows.Forms.Button CubeRootButton;

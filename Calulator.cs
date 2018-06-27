@@ -224,5 +224,12 @@ namespace ScientifcCalculator
         {
             memory = System.Convert.ToString(Double.Parse(memory) - Double.Parse(CalcDisplay.Text));
         }
+
+        private void TenPowerButton_Click(object sender, EventArgs e)
+        {
+            ShowOperation.Text = System.Convert.ToString("10^" + Double.Parse(CalcDisplay.Text));
+            double tenPowerOf = Math.Pow(10.0, Double.Parse(CalcDisplay.Text));
+            CalcDisplay.Text = System.Convert.ToString(tenPowerOf);
+        }
     }
 }
