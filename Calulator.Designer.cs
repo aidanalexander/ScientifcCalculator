@@ -299,6 +299,7 @@
             this.FactorialButton.TabIndex = 44;
             this.FactorialButton.Text = "n!";
             this.FactorialButton.UseVisualStyleBackColor = true;
+            this.FactorialButton.Click += new System.EventHandler(this.FactorialButton_Click);
             // 
             // SinButton
             // 
@@ -318,6 +319,7 @@
             this.RootButton.TabIndex = 42;
             this.RootButton.Text = "y√x";
             this.RootButton.UseVisualStyleBackColor = true;
+            this.RootButton.Click += new System.EventHandler(this.RootButton_Click);
             // 
             // SquareButton
             // 
@@ -437,6 +439,7 @@
             this.PowerButton.TabIndex = 26;
             this.PowerButton.Text = "x^y";
             this.PowerButton.UseVisualStyleBackColor = true;
+            this.PowerButton.Click += new System.EventHandler(this.PowerButton_Click);
             // 
             // MCButton
             // 
