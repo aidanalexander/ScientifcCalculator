@@ -46,7 +46,7 @@ namespace ScientifcCalculator
                 }
             }
             else
-            {
+            {   // else set the CalcDisplay to the current text plus the text of the button pressed
                 CalcDisplay.Text = CalcDisplay.Text + button.Text;
             }
         }
@@ -100,27 +100,35 @@ namespace ScientifcCalculator
             // based on the operation string does different maths calculations  
             switch(operation)
             {
+                // adds
                 case "+":
                     CalcDisplay.Text = (results + Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // subtracks
                 case "-":
                     CalcDisplay.Text = (results - Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // multiples
                 case "*":
                     CalcDisplay.Text = (results * Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // divids
                 case "/":
                     CalcDisplay.Text = (results / Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // power
                 case "^":
                     CalcDisplay.Text = Math.Pow(results, Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // square root
                 case "√":
                     CalcDisplay.Text = Math.Pow(results, 1 /Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // modulus
                 case "Mod":
                     CalcDisplay.Text = (results % Double.Parse(CalcDisplay.Text)).ToString();
                     break;
+                // expotential
                 case "Exp":
                     double i = Double.Parse(CalcDisplay.Text);
                     double q;
@@ -253,7 +261,7 @@ namespace ScientifcCalculator
             else
             {
                 // or sets the CalcDisplay to 0
-                CalcDisplay.Text = 0;
+                CalcDisplay.Text = "0";
             }
             
         }

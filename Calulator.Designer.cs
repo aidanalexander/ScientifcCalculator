@@ -534,7 +534,7 @@
             this.groupBox1.Controls.Add(this.DegreesRadio);
             this.groupBox1.Location = new System.Drawing.Point(12, 75);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 33);
+            this.groupBox1.Size = new System.Drawing.Size(204, 33);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             // 
